@@ -1,7 +1,6 @@
 /*Crea un STORE PROCEDURE que calcule el total de ventas para un cliente dado.*/
 
 DELIMITER //
-DROP PROCEDURE total_de_ventas;
 
 CREATE PROCEDURE total_de_ventas(IN cliente_id INT, OUT total_ventas INT)
 BEGIN 

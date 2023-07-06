@@ -7,9 +7,9 @@ INNER JOIN compras cm ON cl.id_cliente = cm.id_cliente
 INNER JOIN producto p ON p.id_producto = cm.id_producto;
 
 /*Crea una VIEW que muestre los productos con descuento.*/
-DROP VIEW productos_con_descuento;
+
 CREATE VIEW productos_con_descuento AS 
-SELECT nombre,descuento
+SELECT *
 FROM producto 
 WHERE descuento > 0;
  

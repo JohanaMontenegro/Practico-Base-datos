@@ -2,7 +2,7 @@
 mismo tiempo.*/
 
 DELIMITER //
- DROP PROCEDURE nueva_orden_de_compra;
+ DROP PROCEDURE IF EXISTS nueva_orden_de_compra;
 
 CREATE PROCEDURE nueva_orden_de_compra(IN nombre_cliente VARCHAR(45),IN correo_electronico VARCHAR(45),IN direccion VARCHAR(45),IN nombre_producto VARCHAR(45),cantidad INT)
 BEGIN
